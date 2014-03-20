@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  database: store_app_dev
+  user: tonatiuh
+  pool: 5
+  timeout: 5000
+
+test: &test
+  adapter: postgresql
+  database: store_app_test
+  user: tonatiuh
+  pool: 5
+  timeout: 5000
+
+cucumber:
+  <<: *test
